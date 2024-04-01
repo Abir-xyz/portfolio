@@ -89,7 +89,7 @@
 @media screen and (min-width: 768px) {
   /* /for the banner */
   .banner-img {
-    max-width: 300px;
+    max-width: 500px;
   }
   .home-center {
     display: flex;
@@ -108,10 +108,10 @@
     /* text-align: center; */
   }
   .home-title {
-    font-size: 1.7rem;
+    font-size: 1.7rem !important;
   }
   .typed-out {
-    font-size: 1.7rem;
+    font-size: 1.7rem !important;
   }
   .home-p1 {
     font-size: 1.1rem;
@@ -125,6 +125,34 @@
     max-width: 200px;
     margin-top: 20px;
   }
+  .home-wrapper {
+    padding-top: 0px !important;
+  }
+}
+
+@media screen and (max-width: 1380px) {
+  .banner-img {
+    max-width: 400px;
+  }
+  .home-title {
+    font-size: 2rem;
+  }
+  .typed-out {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .home-wrapper {
+    padding-top: 10rem;
+  }
+  .home-center {
+    display: flex;
+    flex-direction: column;
+  }
+  .banner-img {
+    max-width: 420px;
+  }
 }
 
 /* ------------------------------------------------------------------ About Section */
@@ -132,8 +160,8 @@
 /* ----------- about at 576 -------- */
 @media screen and (max-width: 600px) {
   .about-text-wrapper {
-    max-width: 95vw;
-    margin: 0 auto;
+    max-width: 95vw !important;
+    margin: 0 auto !important;
     padding-bottom: 20px;
     text-align: left;
   }
@@ -152,7 +180,21 @@
 /* ----------- about at  -------- */
 @media screen and (max-width: 800px) {
   .about-text-wrapper {
-    max-width: 90vw;
+    max-width: 90vw !important;
+    margin: 0 auto !important;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .about-text-wrapper {
+    max-width: 60vw;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .about-text-wrapper {
+    max-width: 70vw;
     margin: 0 auto;
   }
 }
@@ -226,8 +268,8 @@
     padding: 0;
   }
   .projects-center {
-    min-width: 90vw;
-    margin: 0 auto;
+    min-width: 90vw !important;
+    margin: 0 auto !important;
   }
   .project-btn-wrapper {
     display: flex;
@@ -255,6 +297,27 @@
   }
 }
 
+@media screen and (max-width: 1500px) {
+  .projects-center {
+    max-width: 70vw;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .projects-center {
+    max-width: 80vw !important;
+    margin: 0 auto !important;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .projects-center {
+    max-width: 85vw !important;
+    margin: 0 auto !important;
+  }
+}
+
 /*---- subpage --- */
 
 @media screen and (max-width: 600px) {
@@ -274,7 +337,7 @@
     flex-wrap: wrap;
   }
   .recent-project-container {
-    flex: 0 0 calc(33.3% - 20px);
+    flex: 0 0 calc(33.3% - 30px);
     margin: 2rem 0;
   }
 }
@@ -282,6 +345,27 @@
 @media screen and (max-width: 767px) {
   .recent-project-container {
     margin-bottom: 4rem;
+  }
+}
+
+@media screen and (max-width: 1450px) {
+  .recent-projects-center {
+    max-width: 75vw !important;
+    margin: 0 auto !important;
+  }
+}
+
+@media screen and (max-width: 1220px) {
+  .recent-projects-center {
+    max-width: 85vw !important;
+    margin: 0 auto !important;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .recent-projects-center {
+    max-width: 90vw !important;
+    margin: 0 auto !important;
   }
 }
 
