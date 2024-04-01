@@ -361,14 +361,13 @@ ul {
   /* padding-left: 100px; */
 }
 .home-title {
-  font-size: 2rem;
+  font-size: 2.6rem;
 }
 .home-p1 {
   font-size: 1.2rem;
   font-weight: 500;
   line-height: 1.2;
   width: 100%;
-  padding-top: 0px;
 }
 
 .btn {
@@ -410,7 +409,7 @@ ul {
   border-right: 0.15em solid var(--mainColor);
   white-space: nowrap;
   animation: typing 2.5s steps(50, end) forwards, blinking 1.2s infinite;
-  font-size: 2rem;
+  font-size: 2.6rem;
   background: linear-gradient(to right, #00a838, #228132, #1d6943, #339171);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
@@ -460,7 +459,7 @@ ul {
   font-weight: 400;
 }
 .about-text-wrapper {
-  max-width: 60vw;
+  max-width: 50vw;
   margin: 0 auto;
   text-align: center;
   padding-top: 16px;
@@ -569,7 +568,7 @@ ul {
 }
 
 .projects-center {
-  max-width: 80vw;
+  max-width: 60vw;
   margin: 0 auto;
   overflow: hidden;
 }
