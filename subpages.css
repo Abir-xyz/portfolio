@@ -81,8 +81,6 @@
   margin: 60px 0;
 }
 
-
-
 /* Certificates */
 
 .cSection {
@@ -131,7 +129,7 @@
 /* recent projects */
 
 .recent-projects-center {
-  max-width: 80vw;
+  max-width: 65vw;
   margin: 0 auto;
   padding-top: 50px;
 }
@@ -139,6 +137,7 @@
 .recent-project-img {
   display: block;
   width: 100%;
+  max-width: 396px;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
 }
@@ -189,9 +188,12 @@
 
 .recent-project-text-container {
   padding: 20px 16px;
+  max-width: 396px;
 }
 
 .recent-project-container {
+  max-width: 396px;
+  margin: 26px auto;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
 }
@@ -203,7 +205,7 @@
 .contact-img {
   display: block;
   width: 100%;
-  /* max-height: 400px; */
+  max-height: 420px;
 }
 
 .nav-contact {
