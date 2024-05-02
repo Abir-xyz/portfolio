@@ -95,7 +95,8 @@ ul {
 }
 .show-navbar {
   overflow: none;
-  height: 160px;
+  /* height: 160px; */
+  height: 100vh;
 }
 
 .hide-navToggler {
@@ -140,6 +141,11 @@ ul {
 
 .fixed-nav .navbar {
   padding: 0%;
+}
+
+.unscroll {
+  position: fixed;
+  width: 100%;
 }
 
 /* ------------------------------------------------------ Navbar Dark/Light Toggler*/
