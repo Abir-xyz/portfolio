@@ -1,0 +1,352 @@
+/* ---------------------------------------------- Css Helper Utility */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+:root {
+  /* --mainColor: #7510f7; */
+
+  /* --mainColor: #ffc857; */
+
+  /* please see this; this is the maincolor :) do not delete it */
+  /* ------------------------ */
+  --mainColor: #519872;
+  /* ----------------------- */
+  --hoverColor: #6202e0;
+  --hoverTime: background 0.3s ease-in-out, color 0.3s ease-in-out;
+  --darkBlack: #000;
+  /* --primaryBlack: #1a1a1a; */
+  --primaryBlack: #151a1e;
+  --textBlack: #111;
+  /* --white: #fff; */
+  --white: #f3f3f3f8;
+  --textWhite: #ebebeb;
+  /* --dark: #121212; */
+  /* --dark: #111; */
+  /* --dark: hsl(207, 30%, 4%); */
+  /* --dark: #101111; */
+  --dark: hsla(0, 0%, 100%, 0.04);
+  --mainGray: hsla(0, 0%, 100%, 0.747);
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+/* ------------------------------------------------------------ Navbar */
+.navbar {
+  max-width: 90vw;
+  margin: 0 auto;
+  /* padding: 40px 0; */
+  padding-top: 40px;
+}
+
+.navbar-logo {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: var(--mainColor);
+}
+
+.nav-bar {
+  background: transparent;
+  border: none;
+  font-size: 1.4rem;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.nav-bar:focus {
+  color: var(--mainColor);
+}
+
+.nav-x {
+  background: transparent;
+  border: none;
+  font-size: 1.4rem;
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+.nav-x:focus {
+  color: red;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  font-weight: 500;
+  color: var(--textBlack);
+  z-index: 10;
+}
+
+.navbar-links {
+  overflow: hidden;
+  height: 0;
+  transition: all 0.5s ease-in-out;
+}
+.show-navbar {
+  overflow: none;
+  /* height: 160px; */
+  height: 100vh;
+}
+
+.hide-navToggler {
+  display: none;
+}
+
+.nav-x {
+  display: none;
+}
+.show-navX {
+  display: block;
+}
+
+.navbar-toggler-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-one-link {
+  color: var(--mainColor) !important;
+}
+
+.nav-link:focus {
+  color: var(--mainColor);
+}
+
+/* ------------------------------------------------------------ Navbar Fixed */
+
+.fixed-nav {
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  right: 0%;
+  width: 100%;
+  z-index: 200;
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.6);
+  padding-top: 10px !important;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.fixed-nav .navbar {
+  padding: 0%;
+}
+
+.unscroll {
+  position: fixed;
+  width: 100%;
+}
+
+/* ------------------------------------------------------ Navbar Dark/Light Toggler*/
+
+.hide-navDark {
+  display: none;
+}
+.navbar-light {
+  display: none;
+}
+.show-navLight {
+  display: block;
+}
+.show-navDark {
+  display: block;
+}
+.navbar-dark {
+  background: transparent;
+  border: none;
+  font-size: 1.3rem;
+  background-color: rgb(76, 76, 136);
+  /* padding: 6px 8px; */
+  color: yellow;
+  /* box-shadow: 1px 1px 5px 1px rgb(76, 76, 136); */
+  cursor: pointer;
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+}
+
+.navbar-light {
+  background: transparent;
+  border: none;
+  font-size: 1.3rem;
+  background-color: skyblue;
+  color: yellow;
+  cursor: pointer;
+  /* box-shadow: 1px 1px 5px 1px skyblue; */
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+}
+/* ---------------- darkmode */
+.content-black {
+  background-color: var(--primaryBlack);
+  color: var(--textWhite);
+}
+.content-light {
+  background-color: var(--white);
+  color: var(--textBlack);
+}
+
+/* ------------------------------------------------------------ dark mode behaviour*/
+
+.content-black .fixed-nav {
+  background-color: rgba(0, 0, 0, 0.185);
+}
+.content-black .nav-bar {
+  color: var(--textWhite);
+}
+.content-black .nav-x {
+  color: var(--textWhite);
+}
+.content-black .nav-link {
+  color: var(--textWhite);
+}
+.content-black .nav-link:focus {
+  color: var(--mainColor);
+}
+.content-black .about {
+  background-color: var(--dark);
+}
+.content-black .skills {
+  background-color: var(--mainColor);
+  color: var(--textWhite);
+  border: 2px solid var(--mainColor);
+}
+.content-black .skills-title {
+  color: var(--textWhite);
+}
+.content-black .skill-btn {
+  color: var(--textWhite);
+  border: 2px solid var(--textWhite);
+}
+.content-black .skill-more-text {
+  color: var(--textWhite);
+}
+.content-black .skill-more-icon {
+  color: var(--textWhite);
+}
+.content-black .skill-btn:hover {
+  color: var(--mainColor);
+  background-color: var(--textWhite);
+  border: 2px solid var(--textWhite);
+}
+.content-black .project-btn {
+  color: var(--textWhite);
+}
+.content-black .footer-main {
+  background-color: var(--dark);
+}
+.content-black .section-contact-center {
+  background-color: var(--mainColor);
+  border: 2px solid var(--mainColor);
+}
+.content-black .section-contact-title {
+  color: var(--textWhite);
+}
+.content-black .footer-btn {
+  color: var(--textWhite);
+  border: 2px solid var(--textWhite);
+}
+.content-black .footer-btn:hover {
+  color: var(--mainColor);
+  background-color: var(--textWhite);
+  border: 2px solid var(--textWhite);
+}
+.content-black .project-footer-text {
+  color: var(--textWhite);
+}
+.content-black .project-footer-icon {
+  color: var(--textWhite);
+}
+.content-black .about-text {
+  color: var(--mainGray);
+}
+.content-black .about-title {
+  color: var(--mainGray);
+}
+.content-black .about-btn {
+  color: var(--mainGray);
+}
+.content-black .project-details-wrapper {
+  color: var(--mainGray);
+}
+.content-black .project-btn button {
+  color: var(--mainGray);
+}
+.content-black .about-title {
+  color: var(--textWhite);
+}
+.content-black .terminal-container {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(./img/hill-night.jpg) center/cover no-repeat;
+}
+.content-black .terminal-child {
+  /* color: rgba(172, 255, 47, 0.74); */
+  color: var(--mainColor);
+}
+.content-black .terminal-child a {
+  /* color: rgba(172, 255, 47, 0.74); */
+  color: var(--mainColor);
+}
+
+.content-black .nav-abt {
+  color: var(--mainColor);
+}
+
+.content-black .form-control:focus {
+  border: 1px solid var(--mainColor);
+  outline: none;
+}
+
+.content-black .form-control {
+  color: var(--textWhite);
+}
+
+.content-black .contact-social-header h1 {
+  color: var(--textWhite);
+}
+
+.content-black .rpt-source {
+  border: 1px solid var(--mainGray) !important;
+  color: var(--mainGray) !important;
+}
+
+.content-black .rpt-link {
+  border: 1px solid #ebebeb !important;
+  color: var(--mainGray) !important;
+}
+
+.content-black .rpt-heading {
+  color: var(--mainGray);
+}
+
+.content-black .rpt-text {
+  color: var(--mainGray);
+}
+
+.content-black .rpt-source:hover {
+  color: #111 !important;
+  background: #ebebeb !important;
+}
+
+.content-black .rpt-link:hover {
+  color: #111 !important;
+  background: #ebebeb !important;
+}
+.content-black .recent-project-text-container {
+  border-radius: 5px !important;
+}
+.content-black .recent-project-text-container {
+  background-color: #1e2130 !important;
+}

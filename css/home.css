@@ -1,0 +1,89 @@
+/* ------------------------------------------------------------ Home page*/
+
+.home-is-full {
+  min-height: 100vh;
+}
+.home-wrapper {
+  max-width: 80vw;
+  margin: 0 auto;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+  /* padding-left: 100px; */
+}
+.home-title {
+  font-size: 2.6rem;
+}
+.home-p1 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.2;
+  width: 100%;
+}
+
+.btn {
+  display: inline-block;
+  color: var(--mainColor);
+  font-size: 1.1rem;
+  font-weight: 500;
+  border: 2px solid var(--mainColor);
+  border-radius: 5px;
+  padding: 6px 10px;
+  transition: background 0.3s ease-in, color 0.3s ease-in;
+}
+
+.home .btn-wrapper {
+  margin-top: 10px;
+}
+.btn:hover {
+  /* background-color: var(--mainColor);
+  color: var(--textWhite); */
+}
+
+.banner-img {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.home {
+  padding-top: 10rem;
+}
+
+/* ------------------------------- typewriter effect */
+.container {
+  display: inline-block;
+}
+
+.typed-out {
+  overflow: hidden;
+  border-right: 0.15em solid var(--mainColor);
+  white-space: nowrap;
+  animation: typing 2.5s steps(50, end) forwards, blinking 1.2s infinite;
+  font-size: 2.6rem;
+  background: linear-gradient(to right, #00a838, #228132, #1d6943, #339171);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  font-weight: 600;
+  padding-right: 10px;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blinking {
+  from {
+    border-color: transparent;
+  }
+  to {
+    border-color: var(--mainColor);
+  }
+}

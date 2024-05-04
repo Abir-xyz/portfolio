@@ -1,0 +1,105 @@
+/* ------------------------------------------------------------  about page*/
+
+.about {
+  background: var(--mainColor);
+  /* background: #000; */
+  min-height: auto;
+  padding-bottom: 150px;
+  overflow-x: hidden;
+}
+.about-title {
+  color: #fff;
+  font-size: 3rem;
+  font-weight: 600;
+  /* padding-bottom: 20px; */
+  text-align: center;
+  padding-top: 20px;
+}
+.about-text {
+  color: #fff;
+  line-height: 1.7;
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+.about-text-wrapper {
+  max-width: 50vw;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 16px;
+  padding-bottom: 50px;
+}
+.about-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  margin-top: 26px;
+  transition: color 0.2s ease-in-out;
+}
+.about-icon {
+  font-size: 2rem;
+}
+.about-link {
+  text-transform: capitalize;
+  padding-left: 8px;
+}
+.about-btn:hover {
+  color: rgb(221, 221, 221);
+}
+#abt-btn {
+  display: inline-block;
+}
+/* ------------------------------------------------------------ skills page*/
+
+.skills {
+  max-width: 90vw;
+  margin: 0 auto;
+  padding: 30px;
+  border: 1px solid #ebebee;
+  text-align: center;
+  margin-top: -120px;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  background: #fff;
+}
+.skills-title {
+  text-transform: capitalize;
+  font-size: 1.5rem;
+  color: var(--mainColor);
+  font-weight: 600;
+}
+.skills-title-wrapper {
+  padding-bottom: 20px;
+}
+
+.skill-child {
+  flex: 0 0 calc(33.3%);
+  padding: 7.5px 0;
+}
+.skills-img-title {
+  /* text-transform: capitalize; */
+  font-weight: 500;
+  font-size: 1rem;
+  padding: 0 1.1rem;
+}
+.skill-btn {
+  text-transform: capitalize;
+  color: var(--mainColor);
+  font-weight: 500;
+  border: 2px solid var(--mainColor);
+  padding: 6px 30px;
+  border-radius: 5px;
+  transition: var(--hoverTime);
+}
+.skill-btn:hover {
+  background: var(--mainColor);
+  color: var(--textWhite);
+}
+.skill-more-text {
+  color: var(--mainColor);
+}
+.skill-more-icon {
+  padding: 0 !important;
+  margin-top: 5px;
+  color: var(--mainColor);
+}
