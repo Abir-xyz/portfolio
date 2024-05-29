@@ -107,11 +107,6 @@
       <!-- center -->
       <div class="contact-center">
         <div class="contact-gif-wrapper">
-          <!-- <img
-            src="https://media2.giphy.com/media/IoP0PvbbSWGAM/giphy.gif?cid=ecf05e47cwd3yyeeq434j24w26qdelejsutyzga5pt1unmea&amp;rid=giphy.gif&amp;ct=g"
-            alt="Computer Minions GIF"
-            style="width: 100%; left: 0px; top: 0px"
-          /> -->
           <img src="../svj/contact.svg" class="contact-img" />
         </div>
         <div class="contact-form-wrapper">
@@ -119,13 +114,13 @@
             <form
               netlify
               method="POST"
+              name="contact"
               target="_blank"
-              name="contact-form"
               id="my_form"
             >
               <input
                 type="text"
-                name="Name"
+                name="name"
                 placeholder="Name"
                 class="form-control form-name"
                 id="form-name"
@@ -133,14 +128,14 @@
               />
               <input
                 type="email"
-                name="Email"
+                name="email"
                 placeholder="Email"
                 class="form-control form-mail"
                 id="form-mail"
                 required
               />
               <textarea
-                name="Message"
+                name="message"
                 cols="15"
                 rows="5"
                 placeholder="Your Message"
