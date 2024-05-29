@@ -350,3 +350,11 @@ ul {
 .content-black .recent-project-text-container {
   background-color: #1e2130 !important;
 }
+
+/* thank u page */
+.thank-u-wrapper {
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
