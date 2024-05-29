@@ -352,9 +352,39 @@ ul {
 }
 
 /* thank u page */
-.thank-u-wrapper {
-  min-height: 50vh;
+.thanks-page {
+  background-color: var(--primaryBlack);
+  color: #ebebeb;
+}
+
+.thanks-center {
+  min-height: 100vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  max-width: 90vw;
+  margin: 0 auto;
+}
+
+.thanks-center h1 {
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+  font-weight: 400;
+  text-transform: capitalize;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.go-back-btn {
+  color: #000;
+  background-color: #f3f3f3f8;
+  padding: 10px 16px;
+  border-radius: 5px;
+  font-size: 1.1rem;
+}
+
+.go-back-btn:hover {
+  background-color: var(--mainColor);
+  color: #fff;
 }
