@@ -88,8 +88,17 @@ window.addEventListener('scroll', function () {
 
 // --------------------------
 // form
+
 const form = document.querySelector('.contact_form');
 
-form.addEventListener('submit', () => {
+// form.addEventListener('submit', (e) => {
+//   e.preventDefault();
+//   form.submit();
+//   form.reset();
+// });
+
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  form.submit();
   form.reset();
 });
