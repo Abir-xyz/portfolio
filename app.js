@@ -77,7 +77,7 @@ window.addEventListener('scroll', function () {
 });
 
 // --- form input get's reset after submitting
-// const form = document.querySelector('.contact-form');
+// const form = document.querySelector('.contact_form');
 
 // form.addEventListener('submit', function handleSubmit(e) {
 //   e.preventDefault();
@@ -87,3 +87,9 @@ window.addEventListener('scroll', function () {
 // });
 
 // --------------------------
+// form
+const form = document.querySelector('.contact_form');
+
+form.addEventListener('submit', () => {
+  form.reset();
+});
