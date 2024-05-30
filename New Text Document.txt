@@ -1,7 +1,0 @@
-html
-css
-js
-react js
-node js
-material ui
-typescript
