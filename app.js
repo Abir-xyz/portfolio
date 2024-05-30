@@ -77,13 +77,13 @@ window.addEventListener('scroll', function () {
 });
 
 // --- form input get's reset after submitting
-const form = document.getElementById('my_form');
+// const form = document.querySelector('.contact-form');
 
-form.addEventListener('submit', function handleSubmit(e) {
-  e.preventDefault();
-  form.submit();
-  form.reset();
-  return false;
-});
+// form.addEventListener('submit', function handleSubmit(e) {
+//   e.preventDefault();
+//   form.submit();
+//   form.reset();
+//   return false;
+// });
 
 // --------------------------
