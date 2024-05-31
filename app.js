@@ -89,7 +89,7 @@ window.addEventListener('scroll', function () {
 // --------------------------
 // form
 
-const form = document.querySelector('.contact_form');
+// const form = document.querySelector('.contact_form');
 
 // form.addEventListener('submit', (e) => {
 //   e.preventDefault();
@@ -97,8 +97,8 @@ const form = document.querySelector('.contact_form');
 //   form.reset();
 // });
 
-form.addEventListener('submit', (e) => {
-  e.preventDefault();
-  form.submit();
-  form.reset();
-});
+// form.addEventListener('submit', (e) => {
+//   e.preventDefault();
+//   form.submit();
+//   form.reset();
+// });
