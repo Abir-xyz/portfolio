@@ -77,28 +77,21 @@ window.addEventListener('scroll', function () {
 });
 
 // --- form input get's reset after submitting
-// const form = document.querySelector('.contact_form');
 
-// form.addEventListener('submit', function handleSubmit(e) {
-//   e.preventDefault();
-//   form.submit();
-//   form.reset();
-//   return false;
-// });
+const form = document.querySelector('.contact_form');
+
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  form.submit();
+  form.reset();
+  return false;
+});
 
 // --------------------------
 // form
 
-// const form = document.querySelector('.contact_form');
+// const form = document.getElementById('form');
 
-// form.addEventListener('submit', (e) => {
-//   e.preventDefault();
-//   form.submit();
-//   form.reset();
-// });
-
-// form.addEventListener('submit', (e) => {
-//   e.preventDefault();
-//   form.submit();
+// form.addEventListener('submit', () => {
 //   form.reset();
 // });
