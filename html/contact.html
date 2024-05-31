@@ -112,18 +112,27 @@
         <div class="contact-form-wrapper">
           <div class="form-wrapper">
             <form
-              netlify
+              action="https://api.web3forms.com/submit"
               method="POST"
-              name="contact"
-              action="../thankYou.html"
               class="contact_form"
+              id="form"
             >
+              <input
+                type="hidden"
+                name="access_key"
+                value="3fe1639b-a9af-4450-b865-e75653124c43"
+              />
+              <input
+                type="hidden"
+                name="redirect"
+                value="https://abirr.netlify.app/thankYou"
+              />
+              <input type="hidden" name="from_name" value="abirr.netlify.app" />
               <input
                 type="text"
                 name="name"
                 placeholder="Name"
                 class="form-control form-name"
-                id="form-name"
                 required
               />
               <input
@@ -131,7 +140,6 @@
                 name="email"
                 placeholder="Email"
                 class="form-control form-mail"
-                id="form-mail"
                 required
               />
               <textarea
@@ -140,7 +148,6 @@
                 rows="5"
                 placeholder="Your Message"
                 class="form-control form-text"
-                id="form-text"
                 required
               ></textarea>
               <button type="submit" class="form-btn hvr-radial-in">
